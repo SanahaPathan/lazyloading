@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>Parent Component</h2>
+    <div class="card bg-info">
+        <div class="card-body">This is Parent component</div>
+        <p class="bg-success"> {{dataFromChild}} </p>
+    </div>
+    <div class="container">
+      <app-child-c [parentData]="parentToChild" (itemEvent)="emitDataFromChild($event)"></app-child-c>
+        <!--<app-firstone></app-firstone>-->
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>Home Component</h2>
+    <div class="card bg-info">
+      <div class="card-body">This is home component</div>
+    </div>
+
+<p>home works!</p>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">City</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor="let data of data1">
+        <td>{{data.id}}</td>
+        <td>{{data.name}}</td>
+        <td>{{data.age }}</td>
+        <td>{{data.city}}</td>
+        <td><button class="btn btn-primary" (click)="navigateToFacultyDetails(data)">Details</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
